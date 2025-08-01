@@ -15,8 +15,8 @@ let mistakes = 0;
 let isGameOver = false;
 let playerName = "";
 let spawnInterval;
-const popSound = new Audio('sounds/pop.mp3');
-const bombSound = new Audio('sounds/bomba.mp3');
+const popSound = new Audio('/sounds/pop.mp3');
+const bombSound = new Audio('/sounds/bomba.mp3');
 
 function createItem() {
   if (isGameOver) return;
