@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Balon Patlatma Oyunu 🎈</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <!-- X Hesabı Giriş Ekranı -->
+  <div id="loginScreen">
+
+  <div class="login-container">
+    <h2>🎮 Start Game</h2>
+    <p>Enter Your X Username:</p>
+    <input type="text" id="xUsername" placeholder="@username" maxlength="15" />
+    <div class="button-group">
+      <button id="startGameBtn">Start</button>
+      <button id="earnPointsBtn">Earn Points</button>
+    </div>
+  </div>
+  </div>
+
+  <!-- Oyun Ekranı -->
+  <div id="gameScreen" style="display: none;">
+    <img src="background.jpeg" alt="ETHOS Logo" class="ethos-logo" />
+    
+    <h1>ETHOS Pop the Balloons Game</h1>
+    <p>Player: <span id="playerName">@username</span></p>
+    <p>Score: <span id="score">0</span> | Mistakes: <span id="mistakes">0</span>/3</p>
+
+    <div id="gameOver" style="display: none;">
+      💥 GAME OVER 💥
+      <br />
+      <button id="tryAgainBtn">Try Again</button>
+    </div>
+    <div id="scoreBoard">
+      <h2>Best Scores</h2>
+      <ul id="scoreList"></ul>
+    </div>
+    <div id="gameArea"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
